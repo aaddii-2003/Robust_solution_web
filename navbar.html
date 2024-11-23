@@ -1,0 +1,133 @@
+<!-- navbar.html -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robust Solution</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Modern font family */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #f8f9fa; /* Light theme */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .navbar-brand {
+            font-weight: 700; /* Extra bold */
+            font-size: 1.8rem;
+            color: #007bff; /* Vibrant blue */
+            transition: transform 0.3s ease; /* Animation for hover effect */
+        }
+
+        .navbar-brand:hover {
+            color: #0056b3;
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+
+        .nav-link {
+            color: #495057; /* Neutral text color */
+            font-weight: 500; /* Medium bold */
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+            transform: translateY(-3px); /* Subtle upward movement on hover */
+        }
+
+        /* Add a hover underline effect */
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #007bff;
+            transition: width 0.3s ease; /* Animation for underline */
+        }
+
+        .nav-link:hover::after {
+            width: 100%; /* Full underline on hover */
+        }
+
+        .form-control {
+            border: 2px solid #007bff; /* Blue border */
+            border-radius: 25px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+
+        .btn-outline-primary {
+            border: 2px solid #007bff;
+            color: #007bff;
+            border-radius: 25px;
+            font-weight: 600; /* Semi-bold */
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .login-bt {
+            color: #fff;
+            background-color: #28a745; /* Vibrant green */
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-weight: 700; /* Bold */
+            text-decoration: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .login-bt:hover {
+            background-color: #218838;
+            box-shadow: 0 4px 8px rgba(40, 167, 69, 0.4);
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Robust Solution</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-center flex-grow-1">
+                    <li class="nav-item">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#login" class="login-bt">Login</a>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
